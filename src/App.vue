@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <header-site></header-site>
+      <div class="content">
+          <!-- отображаем тут компонент, для которого совпадает маршрут -->
+          <router-view></router-view>
+      </div>
+      <footer-site></footer-site>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Home from './components/layouts/Home.vue'
+  import Theory from './components/layouts/Theory.vue'
+  import Practice from './components/layouts/Practice.vue'
+  import HeaderSite from './components/template/Header.vue'
+  import FooterSite from './components/template/Footer.vue'
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
+  export default {
+    name: 'app',
+    components: {
+      Home, Theory, Practice, HeaderSite, FooterSite
+    }
   }
-}
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
