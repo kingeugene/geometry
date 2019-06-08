@@ -10,16 +10,13 @@
 </template>
 
 <script>
-  import Home from './components/layouts/Home.vue'
-  import Theory from './components/layouts/Theory.vue'
-  import Practice from './components/layouts/Practice.vue'
   import HeaderSite from './components/template/Header.vue'
   import FooterSite from './components/template/Footer.vue'
 
   export default {
     name: 'app',
     components: {
-      Home, Theory, Practice, HeaderSite, FooterSite
+       HeaderSite, FooterSite
     }
   }
 </script>

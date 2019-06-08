@@ -4,11 +4,11 @@
             <div class="header">
                 <div class="header-logo"><img src="../../assets/logo/logo.png" alt="logo"></div>
                 <div class="header-mode">Режим работы: c 9:00 до 16:00</div>
-                <div class="header-menu">
-                        <div class="header-menu__title"><router-link to="/" class="btn">Главная</router-link></div>
-                        <div class="header-menu__title"><router-link to="/theory" class="btn">Теория</router-link></div>
-                        <div class="header-menu__title"><router-link to="/practice" class="btn">Практика</router-link></div>
-                </div>
+                <ul class="header-menu">
+                        <router-link tag="li" to="/" active-class="active" exact class="header-menu__title"><a class="btn">Главная</a></router-link>
+                        <router-link tag="li" to="/theory" active-class="active" class="header-menu__title"><a class="btn">Теория</a></router-link>
+                        <router-link tag="li" to="/practice" active-class="active" class="header-menu__title"><a class="btn">Практика</a></router-link>
+                </ul>
             </div>
         </div>
     </header>
@@ -19,4 +19,14 @@
         name: "Header"
     }
 </script>
+
+<style scoped>
+    .active {
+        background: cornflowerblue;
+        color: black;
+    }
+    .active a {
+        color: black;
+    }
+</style>
 

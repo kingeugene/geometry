@@ -6,11 +6,18 @@ html,
 body {
     height: 100%;
 }
+
 a {
     text-decoration: none;
     color: #fff;
 }
-h2 {
+.content a {
+    color: black;
+}
+.content {
+    margin-bottom: 40px;
+}
+h1, h2 {
     text-align: center;
     margin: 30px;
     text-transform: uppercase;
@@ -80,7 +87,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 33%;
+    width: 33.3%;
 }
 .header-menu__title a {
     height: 70px;
@@ -94,4 +101,9 @@ header {
 .header-menu__title:hover {
     background: beige;
     color: black;
+}
+.bodyErrors {
+    background: url("../img/404/404.png") center no-repeat #fff;
+    margin-top: 40px;
+    height: 100%;
 }

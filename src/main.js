@@ -1,21 +1,13 @@
 import Vue from 'vue';
 import App from './App.vue';
-import VueRouter from 'vue-router';
+import { router } from "./router/router";
+import VueLazyLoad from 'vue-lazyload'
 
-Vue.use(VueRouter);
+require('vue-image-lightbox/dist/vue-image-lightbox.min.css');
+
+Vue.use(VueLazyLoad);
 
 Vue.config.productionTip = false;
-
-const routes = [
-  { path: '/', component: App.components.Home },
-  { path: '/theory', component: App.components.Theory },
-  { path: '/practice', component: App.components.Practice }
-];
-
-const router = new VueRouter({
-  routes
-});
-
 
 
 new Vue({
