@@ -16,6 +16,7 @@ import Polygons from '../components/layouts/theory/8class/Polygons'
 import Rhombus from '../components/layouts/theory/8class/Rhombus'
 import Sine from '../components/layouts/theory/9class/Sine'
 import RelationsBetween from '../components/layouts/theory/9class/RelationsBetween'
+import QulityTrianglesF from '../components/layouts/practice/7class/QulityTrianglesF'
 
 
 
@@ -26,6 +27,8 @@ const routes = [
     { path: '/', component: Home },
     { path: '/theory', component: Theory },
     { path: '/practice', component: Practice },
+
+    //Теория
     { path: '/theory/firstQuality', component: FirstQuality},
     { path: '/theory/secondMedians', component: SecondMedians },
     { path: '/theory/thirdQuality', component: ThirdQuality },
@@ -37,6 +40,11 @@ const routes = [
     { path: '/theory/rhombus', component: Rhombus },
     { path: '/theory/sine', component: Sine },
     { path: '/theory/relationsBetween', component: RelationsBetween },
+    //Конец Теории
+
+    //Практика
+    { path: '/theory/qulityTrianglesF', component: QulityTrianglesF},
+
 
 
     { path: '*', component: Errors }

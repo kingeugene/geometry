@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1>Геометрия</h1>
+        <h1>Теория по Геометрия</h1>
         <h2>7 Класс</h2>
         <ol class="list-title" style="list-style-type: upper-roman;">
             <li>Треугольники</li>
