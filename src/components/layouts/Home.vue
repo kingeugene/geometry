@@ -39,7 +39,9 @@
       <p style="text-align: center; margin-bottom: 30px;">Обучение предполагается как процесс интеллектуально-практической деятельности, основанной на жизненном опыте учащихся. Дедуктивные умозаключения, отдельные рассуждения, способствующие усвоению учащимися в дальнейшем систематического курса геометрии, вводятся постепенно. Уделяется внимание развитию речи: работе с терминами, понятиями, определениями.</p>
       <slider-gallery></slider-gallery>
     </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.457611637175!2d34.09510751500175!3d44.97501427397251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40eadd8a11dc792b%3A0xd8c284d608261726!2z0YPQuy4g0JrQuNC10LLRgdC60LDRjywgMTM3LCDQodC40LzRhNC10YDQvtC_0L7Qu9GM!5e0!3m2!1sru!2sua!4v1559727930437!5m2!1sru!2sua" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="footer-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.457611637175!2d34.09510751500175!3d44.97501427397251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40eadd8a11dc792b%3A0xd8c284d608261726!2z0YPQuy4g0JrQuNC10LLRgdC60LDRjywgMTM3LCDQodC40LzRhNC10YDQvtC_0L7Qu9GM!5e0!3m2!1sru!2sua!4v1559727930437!5m2!1sru!2sua" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
   </div>
 </template>
 

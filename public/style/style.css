@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 html,
 body {
@@ -67,7 +68,7 @@ header {
     margin-right: 5px;
 }
 .header-logo, .footer-logo {
-    width: 15%;
+    width: 17%;
 }
 .header-logo img, .footer-logo img {
     width: 100%;
@@ -96,14 +97,46 @@ header {
     line-height: 70px;
 }
 .header-menu__title a:hover{
-    color: #000;
+    color: #fff;
 }
 .header-menu__title:hover {
-    background: beige;
-    color: black;
+    background: indigo;
 }
 .bodyErrors {
     background: url("../img/404/404.png") center no-repeat #fff;
     margin-top: 40px;
     height: 100%;
+}
+input {
+    text-align: center;
+    font-size: 16px;
+}
+.messAnsOk {
+    color: green;
+}
+.messAnsError {
+    color: red;
+}
+.vue-lb-info {
+    line-height: 40px;
+}
+.footer-map {
+    margin-bottom: -40px;
+}
+input[type="submit" i] {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .6em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+    outline: none;
+    margin: 10px 0 ;
+}
+input[type="submit" i]:hover { background: rgb(53, 167, 110); }
+input[type="submit" i]:active {
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
 }

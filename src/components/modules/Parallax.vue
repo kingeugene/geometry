@@ -21,8 +21,8 @@
 
             </div>
         </div>
-        <parallax :speed-factor="0.5"  :sectionHeight=20>
-            <img class="parallax-img" src="../../assets/homeImg/classGeometry.jpg">
+        <parallax :speed-factor="0.2"  :sectionHeight=90>
+            <img src="../../assets/homeImg/classGeometry.jpg">
         </parallax>
     </div>
 </template>
@@ -41,6 +41,7 @@
     .parallax-container {
         position: relative;
         margin: 50px 0;
+
     }
     .parallax-title {
         position: absolute;

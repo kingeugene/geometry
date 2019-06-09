@@ -2,8 +2,7 @@
     <div class="footer">
         <div class="container footer-wrapper">
             <div class="footer-logo">
-                <img src="../../assets/logo/logo.png" alt="">
-                <div class="footer-logo__copyright">
+                <router-link to="/"><img src="../../assets/logo/logo.png" alt="logo"></router-link>                <div class="footer-logo__copyright">
                     &copy; Сайт геометрии 2019
                 </div>
             </div>
@@ -24,7 +23,7 @@
             </div>
             <div class="footer-contacts">
                 <div class="footer-contacts__title">Наши контакты: </div>
-                <div>Телефоны: <span style="font-weight: bold">0991280388</span>, <span style="font-weight: bold">0505025438</span></div>
+                <div>Телефоны: <span style="font-weight: bold">+7 965 000-00-00</span>, <span style="font-weight: bold">+7 965 816-99-99</span></div>
                 <div>Почта: <span style="font-weight: bold">info-geometry@mail.ru</span></div>
             </div>
         </div>

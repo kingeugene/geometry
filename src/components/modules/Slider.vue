@@ -1,5 +1,5 @@
 <template>
-    <hooper :progress="true" :autoPlay="true" :playSpeed="4000" :itemsToSlide="1" :itemsToShow="3" :transition="1000">
+    <hooper :progress="true" :autoPlay="true" :playSpeed="2000" :itemsToSlide="1" :itemsToShow="3" :transition="800" :infiniteScroll="true">
         <slide class="sliderWrap" v-for="item in imagesSlider" :key="item">
             <img class="sliderImg"  :src="srcImg + item"  alt="">
         </slide>
@@ -24,6 +24,8 @@
         components: {
             Hooper,
             Slide,
+
+
         }
     }
 </script>

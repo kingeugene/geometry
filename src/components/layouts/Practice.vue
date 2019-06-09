@@ -14,29 +14,32 @@
                 <li @click="openTask('third')">Второй и третий признаки равенства треугольников</li>
                 <third-quality-triagles v-if="task.third"></third-quality-triagles>
             </ol>
-            <li>Соотношение между сторонами и углами треугольника</li>
-            <ol>
-                <li><router-link to="/theory/sumTriagles">Сумма углов треугольника</router-link></li>
-                <li><router-link to="/theory/aspectRation">Соотношения между сторонами и углами треугольника</router-link></li>
-                <li><router-link to="/theory/rightTriangles">Прямоугольные треугольники</router-link></li>
-            </ol>
         </ol>
         <h2>8 Класс</h2>
         <ol class="list-title" style="list-style-type: upper-roman;">
             <li>Четырёхугольники</li>
             <ol>
-                <li><router-link to="/theory/polygons">Многоугольники</router-link></li>
-                <li><router-link to="/theory/parallelogram">Параллелограмм и трапеция</router-link></li>
-                <li><router-link to="/theory/rhombus">Прямоугольник, ромб, квадрат</router-link></li>
+
+                <li @click="openTask('four')">Многоугольники</li>
+                <app-polygons v-if="task.four"></app-polygons>
+
+                <li @click="openTask('five')">Параллелограмм и трапеция</li>
+                <app-parallelogram v-if="task.five"></app-parallelogram>
+
+                <li @click="openTask('six')">Прямоугольник, ромб, квадрат</li>
+                <app-rhombus v-if="task.six"></app-rhombus>
             </ol>
         </ol>
         <h2>9 Класс</h2>
         <ol class="list-title" style="list-style-type: upper-roman;">
             <li>Соотношение между сторонами и углами треугольника</li>
             <ol>
-                <li><router-link to="/theory/sine">Синус, косинус, тангенс угла</router-link></li>
-                <li><router-link to="/theory/relationsBetween">	Соотношения между сторонами и углами треугольника</router-link></li>
 
+                <li @click="openTask('seven')">Синус, косинус, тангенс угла</li>
+                <app-sine v-if="task.seven"></app-sine>
+
+                <li @click="openTask('eight')">Соотношения между сторонами и углами треугольника</li>
+                <app-relationsBetween v-if="task.eight"></app-relationsBetween>
             </ol>
         </ol>
 
@@ -48,7 +51,11 @@
     import QulityTrianglesF from './practice/7class/QulityTrianglesF'
     import SecondMedians from './practice/7class/SecondMedians'
     import ThirdQualityTriagles from './practice/7class/ThirdQualityTriagles'
-
+    import Polygons from './practice/8class/Polygons'
+    import Parallelogram from './practice/8class/Parallelogram'
+    import Rhombus from './practice/8class/Rhombus'
+    import Sine from './practice/9class/Sine'
+    import RelationsBetween from './practice/9class/RelationsBetween'
 
     export default {
         data() {
@@ -56,7 +63,12 @@
                 task: {
                     first: false,
                     second: false,
-                    third: false
+                    third: false,
+                    four: false,
+                    five: false,
+                    six: false,
+                    seven: false,
+                    eight: false
 
                 }
             }
@@ -64,7 +76,13 @@
         components: {
             'app-triangles-first' : QulityTrianglesF,
             'app-second-medians' : SecondMedians,
-            ThirdQualityTriagles
+            ThirdQualityTriagles,
+            'app-polygons': Polygons,
+            'app-parallelogram': Parallelogram,
+            'app-rhombus' : Rhombus,
+            'app-sine' : Sine,
+            'app-relationsBetween' : RelationsBetween
+
         },
         methods: {
             openTask(val) {
