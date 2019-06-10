@@ -17,6 +17,8 @@ import Rhombus from '../components/layouts/theory/8class/Rhombus'
 import Sine from '../components/layouts/theory/9class/Sine'
 import RelationsBetween from '../components/layouts/theory/9class/RelationsBetween'
 import QulityTrianglesF from '../components/layouts/practice/7class/QulityTrianglesF'
+import History from '../components/layouts/history/History'
+
 
 
 
@@ -40,6 +42,7 @@ const routes = [
     { path: '/theory/rhombus', component: Rhombus },
     { path: '/theory/sine', component: Sine },
     { path: '/theory/relationsBetween', component: RelationsBetween },
+    { path: '/history', component: History },
     //Конец Теории
 
     //Практика

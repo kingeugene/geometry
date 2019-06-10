@@ -10,6 +10,7 @@
                 <div class="footer-menu__title"><router-link to="/" class="btn">Главная</router-link></div>
                 <div class="footer-menu__title"><router-link to="/theory" class="btn">Теория</router-link></div>
                 <div class="footer-menu__title"><router-link to="/practice" class="btn">Практика</router-link></div>
+                <div>      <router-link to="/history">Вход</router-link> </div>
             </div>
             <div class="footer-social">
                 <div class="footer-social__title">Мы в соцсетях:</div>
