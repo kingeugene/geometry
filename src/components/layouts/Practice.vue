@@ -7,7 +7,7 @@
             <base-task
                     v-if="taskShow[index]"
                     :taskText="item.taskText"
-                    :correct-answer="item.correctAnswer"
+                    :correctanswer="item.correctAnswer"
             ></base-task>
         </div>
     </div>
@@ -49,7 +49,7 @@
                     {
                         wrapTitle: "Треугольники, четырёхугольники, многоугольники и их элементы",
                         taskTitle: "Углы",
-                        taskText: "<p class=\"left_margin\">Биссектрисы  углов  <i>N</i> и  <i>M</i> треугольника &nbsp;<i>MNP</i>&nbsp; пересекаются в точке &nbsp;<i>A</i>. Найдите &nbsp;<img src=\"https://oge.sdamgia.ru/formula/svg/eb/ebd5199deb66d437b090676f57880416.svg\" class=\"tex\" style=\"vertical-align:-2pt\">, если &nbsp;<img src=\"https://oge.sdamgia.ru/formula/svg/a7/a75a4aa09c273936a7619d6059d972ab.svg\" class=\"tex\" style=\"vertical-align:-2pt\">, а &nbsp;<img src=\"https://oge.sdamgia.ru/formula/svg/9c/9cd746aa7045cbd142175d2748b87877.svg\" class=\"tex\" style=\"vertical-align:-2pt\"><div><img src='https://oge.sdamgia.ru/get_file?id=15932' alt=''></div></p>",
+                        taskText: "<p class=\"left_margin\">Биссектрисы  углов  <i>N</i> и  <i>M</i> треугольника &nbsp;<i>MNP</i>&nbsp; пересекаются в точке &nbsp;<i>A</i>. Найдите &nbsp;<img src=\"https://oge.sdamgia.ru/formula/svg/eb/ebd5199deb66d437b090676f57880416.svg\" class=\"tex\" style=\"verticalalign:2pt\">, если &nbsp;<img src=\"https://oge.sdamgia.ru/formula/svg/a7/a75a4aa09c273936a7619d6059d972ab.svg\" class=\"tex\" style=\"verticalalign:2pt\">, а &nbsp;<img src=\"https://oge.sdamgia.ru/formula/svg/9c/9cd746aa7045cbd142175d2748b87877.svg\" class=\"tex\" style=\"verticalalign:2pt\"><div><img src='https://oge.sdamgia.ru/get_file?id=15932' alt=''></div></p>",
                         correctAnswer: "117",
                     },
                     {
@@ -59,7 +59,7 @@
                     },
                     {
                         taskTitle: "Равнобедренные треугольники",
-                        taskText: "<p class=\"left_margin\">В равностороннем треугольнике <i>ABC</i> биссектрисы <i>CN</i> и <i>AM</i> пересекаются в точке&nbsp;<i>P</i>.&nbsp;Найдите <img src=\"https://oge.sdamgia.ru/formula/svg/d5/d51e74d2940d0653a0ea3266e861bbb9.svg\" class=\"tex\" style=\"vertical-align:-2pt\">. <div><img src='https://oge.sdamgia.ru/get_file?id=15891' alt=''></div></p>",
+                        taskText: "<p class=\"left_margin\">В равностороннем треугольнике <i>ABC</i> биссектрисы <i>CN</i> и <i>AM</i> пересекаются в точке&nbsp;<i>P</i>.&nbsp;Найдите <img src=\"https://oge.sdamgia.ru/formula/svg/d5/d51e74d2940d0653a0ea3266e861bbb9.svg\" class=\"tex\" style=\"verticalalign:2pt\">. <div><img src='https://oge.sdamgia.ru/get_file?id=15891' alt=''></div></p>",
                         correctAnswer: "120",
                     },
                     {
@@ -135,9 +135,47 @@
                         taskText: "Найдите синус острого угла трапеции, изображённой на рисунке. <div><img src='https://oge.sdamgia.ru/get_file?id=16232' alt=''></div>",
                         correctAnswer: "0,8",
                     },
+                    {
+                        wrapTitle: "Геометрическая задача на вычисление",
+                        taskTitle: "Углы",
+                        taskText: "<div>Отрезки AB и DC лежат на па­рал­лель­ных прямых, а от­рез­ки AC и BD пе­ре­се­ка­ют­ся в точке M. Най­ди­те MC, если AB = 10, DC = 25, AC = 56 . <div><img src='https://oge.sdamgia.ru/get_file?id=16405' alt=''></div></div>",
+                        correctAnswer: "40",
+                    },
+                    {
+                        taskTitle: "Треугольники",
+                        taskText: "<div>В тре­уголь­ни­ке ABC угол С равен 90°, ра­ди­ус впи­сан­ной окруж­но­сти равен 2. Най­ди­те пло­щадь тре­уголь­ни­ка ABC, если AB = 12.</div>",
+                        correctAnswer: "28",
+                    },
+                    {
+                        taskTitle: "Четырёхугольники",
+                        taskText: "<div>В па­рал­ле­ло­грамм впи­са­на окружность. Най­ди­те пе­ри­метр параллелограмма, если одна из его сто­рон равна 8.</div>",
+                        correctAnswer: "32",
+                    },
+                    {
+                        taskTitle: "Окружности",
+                        taskText: "<div>Отрезки АВ и CD являются хордами окружности. Найдите длину хорды CD, если АВ = 24, а расстояние от центра окружности до хорд АВ и CD равны соответственно 16 и 12.</div>",
+                        correctAnswer: "32",
+                    },
+                    {
+                        wrapTitle: "Геометрическая задача повышенной сложности",
+                        taskTitle: "Треугольники",
+                        taskText: "<div>Через се­ре­ди­ну K ме­ди­а­ны BM тре­уголь­ни­ка ABC и вер­ши­ну A про­ве­де­на прямая, пе­ре­се­ка­ю­щая сто­ро­ну BC в точке P. Най­ди­те от­но­ше­ние пло­ща­ди тре­уголь­ни­ка ABK к пло­ща­ди четырёхугольника KPCM.</div>",
+                        correctAnswer: "0,6",
+                    },
+                    {
+                        taskTitle: "Четырёхугольники",
+                        taskText: "<div>Высота AH ромба ABCD делит сто­ро­ну CD на от­рез­ки DH = 21 и CH = 8. Най­ди­те вы­со­ту ромба.</div>",
+                        correctAnswer: "20",
+                    },
+                    {
+                        taskTitle: "Окружности",
+                        taskText: "<div>Три окруж­но­сти, ра­ди­у­сы ко­то­рых равны 2, 3 и 10, по­пар­но ка­са­ют­ся внеш­ним об­ра­зом. Най­ди­те ра­ди­ус окруж­но­сти, впи­сан­ной в тре­уголь­ник, вер­ши­на­ми ко­то­ро­го яв­ля­ют­ся цен­тры этих трёх окруж­но­стей.</div>",
+                        correctAnswer: "2",
+                    },
                 ],
             }
         },
+
         components: {
             'base-task': BaseTask
         },
@@ -156,13 +194,13 @@
 </script>
 
 <style scoped>
-.list-item {
-    cursor: pointer;
-    user-select: none;
-    font-size: 20px;
-    font-weight: 500;
-}
-.list-item:hover {
-    color: green;
-}
+    .list-item {
+        cursor: pointer;
+        user-select: none;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .list-item:hover {
+        color: green;
+    }
 </style>
