@@ -52,7 +52,6 @@
                 this.$store.commit('checkAcc', {login: this.login, password: this.password} );
             },
             deleteMess(val) {
-                console.log(val);
                 this.$store.commit('deleteMess', val)
             }
         }

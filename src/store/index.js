@@ -28,10 +28,7 @@ export default new Vuex.Store({
             }
         },
         deleteMess(state, payload) {
-            console.log(state.dataUser);
             state.dataUser.splice(payload.val, 1);
-            console.log(state.dataUser);
-
         }
     }
 });

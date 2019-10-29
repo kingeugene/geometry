@@ -7,7 +7,7 @@
             <base-task
                     v-if="taskShow[index]"
                     :taskText="item.taskText"
-                    :correctanswer="item.correctAnswer"
+                    :correctAnswer="item.correctAnswer"
             ></base-task>
         </div>
 
