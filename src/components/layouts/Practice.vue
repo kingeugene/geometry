@@ -47,8 +47,13 @@
 
                 <li @click="openTask('seven')">Синус, косинус, тангенс угла</li>
                 <app-sine v-if="task.seven"></app-sine>
+            </ol>
+        </ol>
 
-                <li @click="openTask('eight')">Соотношения между сторонами и углами треугольника</li>
+        <ol class="list-title" style="list-style-type: upper-roman;">
+            <li>Многоугольники</li>
+            <ol>
+                <li @click="openTask('eight')">Периметр трапеции</li>
                 <app-relationsBetween v-if="task.eight"></app-relationsBetween>
             </ol>
         </ol>
@@ -88,14 +93,6 @@
                 taskbase: [
                     {
                         wrapTitle: "Практические задачи по геометрии",
-                        taskTitle: "Углы",
-                        taskText: "Проектор полностью освещает экран A высотой 80 см, расположенный на " +
-                            "расстоянии 250 см от проектора. На каком наименьшем расстоянии (в сантиметрах) " +
-                            "от проектора нужно расположить экран B высотой 160 см, чтобы он был полностью" +
-                            " освещён, если настройки проектора остаются неизменными?",
-                        correctAnswer: "500",
-                    },
-                    {
                         taskTitle: "Теорема Пифагора",
                         taskText: "<div>От столба высотой 9 м к дому натянут провод, который крепится на высоте 3 м от земли (см. рисунок). Расстояние от дома до столба 8 м. Вычислите длину провода.</div><div><img src='https://oge.sdamgia.ru/get_file?id=15772' alt=''></div>",
                         correctAnswer: "10",
@@ -242,14 +239,14 @@
 
         components: {
             'base-task': BaseTask,
-            'app-triangles-first' : QulityTrianglesF,
-            'app-second-medians' : SecondMedians,
+            'app-triangles-first': QulityTrianglesF,
+            'app-second-medians': SecondMedians,
             ThirdQualityTriagles,
             'app-polygons': Polygons,
             'app-parallelogram': Parallelogram,
-            'app-rhombus' : Rhombus,
-            'app-sine' : Sine,
-            'app-relationsBetween' : RelationsBetween
+            'app-rhombus': Rhombus,
+            'app-sine': Sine,
+            'app-relationsBetween': RelationsBetween
         },
         methods: {
             openTaskBase(val) {
@@ -261,7 +258,7 @@
         },
 
         beforeMount() {
-            for(let i = 0; i < this.task.length; i++) {
+            for (let i = 0; i < this.task.length; i++) {
                 this.taskShow.push(false);
             }
         }
@@ -275,14 +272,17 @@
         font-size: 20px;
         font-weight: 500;
     }
+
     .list-item:hover {
         color: green;
     }
-    ol>ol>li {
+
+    ol > ol > li {
         cursor: pointer;
         user-select: none;
     }
-    ol>ol>li:hover {
+
+    ol > ol > li:hover {
         color: green;
     }
 </style>
