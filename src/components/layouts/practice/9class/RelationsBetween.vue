@@ -4,7 +4,7 @@
         <img class="gxs-resource-image" alt="Vs_trapece.png" src="//ykl-res.azureedge.net/d8fc9849-53a3-4b36-a9e8-f7533b59e477/Vs_trapece.png" width="383" height="189">
         <div><span>A</span><span style="margin-left: 360px">N</span></div>
         <div>Длинное основание AN равнобедренной трапеции ALCN равно 34 см, короткое основание LC и боковые стороны равны. Определи периметр трапеции, если острый угол трапеции равен 65° (в расчётах округли числа до сотых).</div>
-        <div>PKBCH=  <input type="text" size="5" v-model="answerTask"> см</div>
+        <div>P ALCN=  <input type="text" size="5" v-model="answerTask"> см</div>
         <p :class="checkClass()" v-if="checkAnswer">{{answerText}}</p>
         <div v-show="showText">
             <img src="img/answerTask.png" alt="">
